@@ -1,0 +1,50 @@
+version: "2.0"
+
+stories:
+
+- story: yes_intent
+  steps:
+  - intent: affirm 
+  - action: utter_yes
+  
+- story: no_intent
+  steps:
+  - intent: deny
+  - action: utter_no
+  
+
+- story: interactive_story_1
+  steps:
+  - intent: affirm
+  - action: utter_yes
+
+- story: interactive_story_2
+  steps:
+  - intent: affirm
+  - action: utter_yes
+
+- story: interactive_story_3
+  steps:
+  - intent: deny
+  - action: utter_no
+  - intent: affirm
+  - action: utter_yes
+  - intent: deny
+  - action: utter_no
+  - intent: deny
+  - action: utter_no
+
+- story: interactive_story_1
+  steps:
+  - intent: affirm
+  - action: utter_yes
+
+- story: interactive_story_1
+  steps:
+  - intent: affirm
+  - action: utter_yes
+  - intent: affirm
+  - action: utter_yes
+  - intent: affirm
+  - action: utter_yes
+  - intent: stop

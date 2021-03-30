@@ -1,0 +1,117 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+
+- story: yes_intent
+  steps:
+  - user: |
+      yeah please help me
+    intent: affirm 
+  - action: utter_yes
+
+- story: yes_intent
+  steps:
+  - user: |
+      let me think about it... uh yeah
+    intent: affirm 
+  - action: utter_yes
+  
+- story: no_intent
+  steps:
+  - user: |
+      i dont need a job
+    intent: deny
+  - action: utter_no
+
+- story: no_intent
+  steps:
+  - user: |
+      i reell really do not need a job
+    intent: deny
+  - action: utter_no
+
+- story: yes_intent
+  steps:
+  - user: |
+      ok ya lets do this shit
+    intent: affirm 
+  - action: utter_yes
+
+- story: yes_intent
+  steps:
+  - user: |
+      yuuuup
+    intent: affirm 
+  - action: utter_yes
+  
+- story: no_intent
+  steps:
+  - user: |
+      nooope
+    intent: deny
+  - action: utter_no
+
+- story: yes_intent
+  steps:
+  - user: |
+      i just got fired so i definetly need a job 
+    intent: affirm
+  - action: utter_yes
+
+- story: yes_intent
+  steps:
+  - user: |
+      yes a million times yes
+    intent: affirm 
+  - action: utter_yes
+
+- story: yes_intent
+  steps:
+  - user: |
+      please help me find a job
+    intent: affirm 
+  - action: utter_yes
+  
+- story: no_intent
+  steps:
+  - user: |
+      no definetly not
+    intent: deny
+  - action: utter_no
+
+- story: no_intent
+  steps:
+  - user: |
+      im not interested in working
+    intent: deny
+  - action: utter_no
+
+- story: yes_intent
+  steps:
+  - user: |
+      yeah sure im definetly interested
+    intent: affirm 
+  - action: utter_yes
+
+- story: yes_intent
+  steps:
+  - user: |
+      i hate working but i need a job
+    intent: affirm 
+  - action: utter_yes
+  
+- story: no_intent
+  steps:
+  - user: |
+      no thanks
+    intent: deny
+  - action: utter_no
+
+- story: yes_intent
+  steps:
+  - user: |
+      i really really need a job 
+    intent: affirm
+  - action: utter_yes
+
